@@ -1,3 +1,4 @@
 # Install Required Pyhon libraries with "pip install -r requirements.txt"
 opencv-python
 docopt
+matplotlib

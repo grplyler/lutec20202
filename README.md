@@ -5,14 +5,7 @@
 
 1. [Python3](#python-3)
 2. [OpenCV Python](#install-opencv-python)
-3. An IDE
-    * VS Code
-    * PyCharm
-4. A Command Shell
-    * PowerShell/cmd.exe on Windows
-    * Terminal.app on Mac
-    * Linux (You'll know what to use)
-5. This Repository
+3. [Supporting Libraries](#additional-libraries)
 
 ## Installation
 
@@ -96,5 +89,17 @@ We will be using opencv as our computer vision and facial recognition library.
 
     And you're all set!
 
+### Additional Libraries
+
+After you have cloned the repository, you should now install the additional python libraries that make this project function. Those include:
+
+* docopt
+* matplotlib
+
+Install these libraries like this:
+
+```
+pip install -r requirements.txt
+```
 
 
