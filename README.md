@@ -4,7 +4,7 @@
 ## Requirements
 
 1. [Python3](#python-3)
-2. [OpenCV Python](#opencv-python)
+2. [OpenCV Python](#install-opencv-python)
 3. An IDE
     * VS Code
     * PyCharm
@@ -13,10 +13,6 @@
     * Terminal.app on Mac
     * Linux (You'll know what to use)
 5. This Repository
-
-## Navigation
-
-* [Installation](#installation)
 
 ## Installation
 
