@@ -32,69 +32,45 @@ class FacialRecognizer(object):
 
     def load_image(self, ipath):
         """Loads and image from disk"""
-        print("Loading Image: {}".format(ipath))
 
-        # Load Image as Numpy array from disk
-        self.image = cv2.imread(ipath)
+        # TODO: Load Image as Numpy array from disk
 
-        # Convert image to black and white
-        self.gray = cv2.cvtColor(self.image, cv2.COLOR_BGR2GRAY)
+        # TODO: Convert image to black and white
 
-        print("Image Loaded: {}".format(ipath))
 
     def detect_faces(self, display=False):
         """"Returns array of coordinates where a face may be"""
 
         print("Detecting Faces in: {}".format(self.ipath))
         
-        # Get Cascade path from command line options
-        cascade_path = self.opts['--model']
-        print(cascade_path)
-        print("Loading Facial Cascade Classifier:", cascade_path)
+        # TODO: Get Cascade path from command line options
 
-        # Load Haar Cascade to Detect Faces
-        self.cascade = cv2.CascadeClassifier(cascade_path)
 
-        # Get Min size from command line options
-        min_size = int(self.opts['--min-size'])
-        print(min_size)
+        # TODO: Load Haar Cascade to Detect Faces
 
-        # Run cascade detection
-        faces = self.cascade.detectMultiScale(
-            self.gray,
-            scaleFactor=1.1,
-            minNeighbors=5,
-            minSize=(min_size, min_size)
-        )
 
-        print("Found {} faces.".format(len(faces)))
-        print(faces)
+        # TODO: Get Min size from command line options
 
-        # If display option is True, show image with faces identified
-        if display:
-            for (x, y, w, h) in faces:
 
-                # Draw a green rectangle
-                cv2.rectangle(self.image, (x, y), (x+w, y+h), (0, 255, 0), 2)
+        # TODO: Run cascade detection
 
-            # cv2.imshow("Detection Results", self.image)
-            # cv2.waitKey(0)
+        # TODO: If display option is True, show image with faces identified
 
-            # Display Image
-            plt.imshow(self.image)
-            plt.show()
+
+                # TODO: Draw a green rectangle
+
+
+            # TODO: Display Image
+
 
 
 if __name__ == "__main__":
 
-    # Parse command line options with docopt
+    # TODO: Parse command line options with docopt
     options = docopt.docopt(USAGE)
 
-    # Instantiate facial recognition class
-    facerec = FacialRecognizer(options)
 
-    # Load and Image to analyze
-    facerec.load_image(options['<image>'])
+    # TODO: Load and Image to analyze
 
-    # Get faces in image
-    faces = facerec.detect_faces(display=True)
+
+    # TODO: Get faces in image
