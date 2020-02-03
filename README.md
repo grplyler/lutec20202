@@ -19,7 +19,6 @@
 * [Installation](#installation)
 
 ## Installation
----
 
 We will be using python3 for this workshop. If you are still using python2, consider moving to python 3 because the Python Foundation has official discontinued support for python2 as of January, 2020
 
