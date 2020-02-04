@@ -69,6 +69,8 @@ if __name__ == "__main__":
     # TODO: Parse command line options with docopt
     options = docopt.docopt(USAGE)
 
+    # TODO: Instantiate Facial Recognizer
+
 
     # TODO: Load and Image to analyze
 
